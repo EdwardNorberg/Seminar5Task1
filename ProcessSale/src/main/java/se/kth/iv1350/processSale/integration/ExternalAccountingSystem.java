@@ -32,7 +32,7 @@ public class ExternalAccountingSystem {
 
     private void notifyObservers(Receipt receipt) {
         for (RevenueObserver observer : revenueObservers){
-            observer.showRevenue(receipt.getTotalPrice());
+            observer.registerNewSale(receipt.getTotalPrice());
         }
     }
 

@@ -10,5 +10,5 @@ public interface RevenueObserver {
      * 
      * @param totalPrice
      */
-    void showRevenue(float totalPrice);
+    void registerNewSale(float totalPrice);
 }
